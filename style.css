@@ -1,0 +1,63 @@
+/* Hintergrundfarbe der gesamten Seite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Zentrierung und Stil der Tabelle */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* Stil der Tabellenzellen */
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+}
+
+/* Stil der Innenlinien */
+td {
+    border: 1px solid white;
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    border-top: none;
+}
+
+td:nth-child(3n+1) {
+    border-left: none;
+}
+
+td:nth-child(3n) {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
